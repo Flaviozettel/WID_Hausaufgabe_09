@@ -1,7 +1,16 @@
-import Typography from "@mui/material/Typography";
+import React from "react";
+import { Container, Typography } from "@mui/material";
+import VegaChart from "./vega-utils.jsx";
 
-function App() {
-  return <Typography variant="h3">Hello React + MUI!</Typography>;
-}
+const App = () => {
+  return (
+    <Container>
+      <Typography variant="h4" gutterBottom>
+        Vega-Lite Chart Example
+      </Typography>
+      <VegaChart />
+    </Container>
+  );
+};
 
 export default App;
